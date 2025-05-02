@@ -1,0 +1,61 @@
+.banner{
+    height: 80px;
+    width:100%;
+    background-color: rgb(191, 222, 251);
+}
+
+
+
+.logo{
+    width: 60px;
+}
+
+.main-frame{
+    background-color: rgba(130, 183, 232, 0.07);
+    background-image: url(logo.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+
+
+.but{
+    height:50px;
+    background: linear-gradient(to right top, rgb(91, 91, 163),rgb(235, 144, 198));
+    transition: background 0.3s;
+}
+
+.but:hover{
+    background: linear-gradient(to top right,rgb(235, 144, 198), rgb(91, 91, 163),rgb(235, 144, 198));
+}
+
+.f1{
+    border-radius: 0 50px 0 50px;
+}
+
+.f2{
+    background-image: url(eimg/banner1.jpeg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.f21{
+    background-color: rgba(0, 0, 0, 0.658);
+    border: solid;
+    border-width: 3px 0 0 0 ;
+}
+
+.f3{
+    background-color: rgb(241, 157, 202);
+}
+
+.aimg{
+    border-radius: 100px;
+}
+
+.bottom{
+    height: 80vh;
+}
