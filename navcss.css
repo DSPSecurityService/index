@@ -1,0 +1,23 @@
+.banner{
+    height: 80px;
+    width:100%;
+    background-color: rgb(191, 222, 251);
+}
+
+a{
+    text-decoration: none;
+}
+
+.tag{
+    color:black;
+}
+
+.bottom{
+    height: 80vh;
+}
+
+.banner2{
+    height:20vh;
+    background-image: url(eimg/path3.png);
+    background-size: contain;
+}

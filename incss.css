@@ -1,10 +1,8 @@
-.banner{
-    height: 80px;
-    width:100%;
-    background-color: rgb(191, 222, 251);
+#home{
+    color:black;
+    border:solid;
+    border-width: 0 0 4px 0;
 }
-
-
 
 .logo{
     width: 60px;
@@ -18,8 +16,6 @@
     background-repeat: no-repeat;
     height: 700px;
 }
-
-
 
 .but{
     height:50px;

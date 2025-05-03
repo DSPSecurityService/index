@@ -2,23 +2,9 @@ body{
     margin:0;
     padding: 0;
 }
-.banner{
-    height: 120px;
-    width:100vw;
-    background-image: url(/eimg/path3.png);
-    background-size:contain;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-
-.nav-bar{
-    height: 80px;
-    background-color: rgb(84, 74, 229);
-    
-}
-
-.nav-bar h1{
-    font-size:50px;
+#contact{
+    color:black;
+    border:solid;
+    border-width: 0 0 4px 0;
 }
