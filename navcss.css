@@ -22,3 +22,37 @@ a{
     background-image: url(eimg/path3.png);
     background-size: contain;
 }
+
+.b1{
+    background-color: rgb(48, 27, 76);
+}
+
+.b_name{
+    font-family:"Orbitron", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.m_name{
+    font-family:"Electrolize", sans-serif;
+     font-weight: 500;
+}
+
+.fs-5,.fs-4,.fs-3,.fs-6.h4 {
+    
+font-family: "Electrolize", sans-serif;
+}
+
+.fs-1,.fs-2,.h1,.h2{
+    font-family: "Anta", sans-serif;
+}
+
+.bmenu{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.bmenu:hover{
+    color: rgb(183, 183, 185);
+}

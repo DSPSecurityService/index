@@ -11,5 +11,21 @@ body{
 
 
 .f1{
-    background-color: rgba(237, 179, 179, 0.704);
+    background-color: rgb(250, 242, 242);
+}
+
+.a1{
+    left:-50%;
+    border-radius: 30px;
+}
+
+.g1{
+    height:60vh;
+    background-image: url(eimg/map.png);
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+.g1:hover{
+    transform: scale(1.1,1.1);
 }
