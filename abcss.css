@@ -4,6 +4,17 @@
     border-width: 0 0 2px 0;
 }
 
+.aani{
+    animation: moves 15s alternate-reverse linear infinite;
+}
 
+@keyframes moves {
+    from {
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
 

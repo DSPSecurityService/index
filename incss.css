@@ -21,12 +21,12 @@
 
 .but{
     height:50px;
-    background: linear-gradient(to right top, rgb(46, 46, 113),rgb(225, 95, 95));
+    background: linear-gradient(to right top, rgb(46, 46, 113),rgb(101, 105, 218));
     transition: background 0.3s;
 }
 
 .but:hover{
-    background: linear-gradient(to top right,rgb(225, 95, 95), rgb(46, 46, 113));
+    background: linear-gradient(to top right,rgb(101, 105, 218), rgb(46, 46, 113));
 }
 
 .f1{
@@ -55,5 +55,6 @@
 
 .aimg{
     border-radius: 100px;
+    border:none;
 }
 
