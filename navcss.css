@@ -56,3 +56,15 @@ font-family: "Electrolize", sans-serif;
 .bmenu:hover{
     color: rgb(183, 183, 185);
 }
+
+.downLink{
+    width:30px;
+}
+
+.menu{
+    display: block;
+}
+
+.menudowns{
+    display: none;
+}

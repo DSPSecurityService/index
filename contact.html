@@ -11,14 +11,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&family=Electrolize&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-
+    <script src="down.js"></script>
 </head>
 <body>
     <div class="banner d-flex justify-content-between align-items-center gap-4 container-fluid">
         <div class="brand fs-5 align-items-center">
-          <p class="mb-0 ms-4 b_name">DSP Service</p>
+          <a class="mb-0 ms-4 b_name text-white" href="index.html">DSP Service</a>
         </div>
-        <div class="menu">
+        <div class="menu d-none d-lg-block">
             <a class="text-white tag me-3 m_name"  href="index.html" id="home" >HOME</a>
             <a class="text-white tag me-3 m_name" id="service" href="servce.html">SERVICES</a>
             <a class="text-white tag me-3 m_name" id="profile" href="whyus.html">WHY US</a>
@@ -26,11 +26,20 @@
             <a class="text-white tag me-3 m_name" href="future.html" id="future">OUR FUTURE</a>
             <a class="text-white tag me-3 m_name" href="contact.html" id="contact">CONTACT</a>
         </div> 
+        <img src="eimg/drop_down.png" class="me-4 downLink d-md-block d-lg-none" onclick="menudown()">
+    </div>
+    <div class="menudowns" id="menudowns">
+      <a href="index.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">HOME</a>
+      <a href="servce.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">SERVICE</a>
+      <a href="whyus.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">WHY US</a>
+      <a href="about.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">ABOUT</a>
+      <a href="future.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">OUR FUTURE</a>
+      <a href="contact.html" class="menu col-12 mb-1 py-2  text-center border-bottom text-black">CONTACT</a>
     </div>
     <div class="banner2 d-flex justify-content-center align-items-center">
         <p class="fs-1 fw-bold">Contact us</p>
     </div>
-    <div class="d-flex justify-content-end me-5 my-5 py-5">
+    <div class="d-flex justify-content-end me-5 my-5 py-5 d-none d-md-block">
         <form class="col-7 me-5 row p-5 f1 border-3 border rounded-2 mt-5 position-relative">
             <img src="eimg/Image-10.jpg" class="position-absolute z-n1 a1 w-75">
             <div class="col-6 py-3">
@@ -49,7 +58,28 @@
                 <label class="form-label">Commants:</label>
                 <textarea rows="5" class="form-control" placeholder="Leave a comment here"></textarea>
             </div>
-            <button class="btn btn-primary col-2 rounded-pill mt-3">send</button>
+            <button class="btn btn-primary col-lg-2 col-md-4 rounded-pill mt-3">send</button>
+        </form>
+    </div>
+     <div class="d-flex justify-content-center my-3 py-5 d-sm-block d-md-none">
+        <form class="col-11 row p-5 f1 border-3 border rounded-2 position-relative">
+            <div class="col-6 py-3">
+                <label class="form-label">Name:</label>
+                <input type="text" class="form-control" placeholder="John wick">
+            </div>
+            <div class="col-6 py-3">
+                <label class="form-label" >Last Name:</label>
+                <input type="text" class="form-control" placeholder="K">
+            </div>
+            <div class="col-12 py-3">
+                <label class="form-label">Subject:</label>
+                <input type="text" class="form-control" placeholder="Job request/about us/services/etc">
+            </div>
+            <div class="col-12 py-3">
+                <label class="form-label">Commants:</label>
+                <textarea rows="5" class="form-control" placeholder="Leave a comment here"></textarea>
+            </div>
+            <button class="btn btn-primary col-lg-2 py-2 col-md-3 rounded-pill mt-3">send</button>
         </form>
     </div>
     <div class="container-fluid  overflow-hidden">
@@ -59,29 +89,28 @@
             </div>
         </a>
         <div class="g2 container d-flex flex-column align-items-center mt-5">
-            <div class="col-9 mb-5 row d-flex justify-content-center align-items-center">
-                <div class="col-5 d-flex justify-content-center">59F5+53M, Angarayanallur Road, Angarayanallur, Tamil Nadu 621802</div>
-                <div class="col-3 d-flex justify-content-center "><a href="https://www.google.com/maps/place/ARuNGuRu/@11.1729586,79.3551097,17z/data=!3m1!4b1!4m6!3m5!1s0x3bab2b877ba08c8d:0x68a5c1cc64bddb61!8m2!3d11.1729586!4d79.3576846!16s%2Fg%2F11jy9fx_wt?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"><button class="btn btn-primary rounded-pill">Locate</button></a></div>
+            <div class="col-12 col-md-9 mb-5 row d-flex justify-content-center align-items-center">
+                <div class="col-8 col-md-5 d-flex justify-content-center">59F5+53M, Angarayanallur Road, Angarayanallur, Tamil Nadu 621802</div>
+                <div class="col-4 col-md-3 d-flex justify-content-center "><a href="https://www.google.com/maps/place/ARuNGuRu/@11.1729586,79.3551097,17z/data=!3m1!4b1!4m6!3m5!1s0x3bab2b877ba08c8d:0x68a5c1cc64bddb61!8m2!3d11.1729586!4d79.3576846!16s%2Fg%2F11jy9fx_wt?entry=ttu&g_ep=EgoyMDI1MDUwNy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"><button class="btn btn-primary rounded-pill">Locate</button></a></div>
             </div>
             
         </div>
     </div>
-    <div class="container-fluid b1 py-5 d-flex justify-content-center">
+    <div class="container-fluid b1 py-5 d-flex justify-content-center d-none d-md-block">
       <div class="container row my-5 gap-5">
-        <div class="col-3 d-flex py-5 mx-4 justify-content-center flex-column align-items-center h-100">
-          
+        <div class="col-md-3 col-12 d-flex py-5 mx-4 justify-content-center flex-column align-items-center h-100">
           <img src="eimg/logo.png" class="w-75">
         </div>
         <div class="col-7 row text-white">
-          <p class="mb-0 b_name">DSP Service</p>
-        <div class="col-6 text-white">
+          <p class="mb-4 b_name">DSP Service</p>
+        <div class="col-6 col-md-6 text-white">
           <a class="fs-6 bmenu mb-3" href="index.html">&gt home</a>
           <a class="fs-6 bmenu mb-3" href="servce.html">&gt services provided</a>
           <a class="fs-6 bmenu mb-3" href="future.html">&gt our plans</a>
           <a class="fs-6 bmenu mb-3" href="servce.html">&gt levels of services</a>
           <a class="fs-6 bmenu mb-3" href="about.html">&gt area served</a>
         </div>
-        <div class="col-3 text-white">
+        <div class="col-md-6 col-xl-3 col-lg-5 text-white">
           <a class="fs-6 bmenu mb-3" href="index.html">&gt working hours</a>
           <a class="fs-6 bmenu mb-3" href="whyus.html">&gt pros of choosing us</a>
           <a class="fs-6 bmenu mb-3" href="contact.html">&gt location</a>
@@ -91,6 +120,26 @@
         </div>
         
       </div>
+    </div>
+    <div class="container-fluid b1 pb-5 d-sm-block d-md-none">
+        <div class="col-12 row text-white">
+          <p class="b_name mt-5 mb-4 ms-4">DSP Service</p>
+           
+        <div class="col-5 me-2 ms-3 text-white">
+          <a class="fs-6 bmenu mb-3" href="index.html">&gt home</a>
+          <a class="fs-6 bmenu mb-3" href="servce.html">&gt services provided</a>
+          <a class="fs-6 bmenu mb-3" href="future.html">&gt our plans</a>
+          <a class="fs-6 bmenu mb-3" href="servce.html">&gt levels of services</a>
+          <a class="fs-6 bmenu mb-3" href="about.html">&gt area served</a>
+        </div>
+        <div class="col-6 text-white">
+          <a class="fs-6 bmenu mb-3" href="index.html">&gt working hours</a>
+          <a class="fs-6 bmenu mb-3" href="whyus.html">&gt pros of choosing us</a>
+          <a class="fs-6 bmenu mb-3" href="contact.html">&gt location</a>
+          <a class="fs-6 bmenu mb-3" href="contact.html">&gt social media ids</a>
+          <a class="fs-6 bmenu mb-3" href="contact.html">&gt leave a comment</a>
+        </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

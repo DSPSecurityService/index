@@ -11,29 +11,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&family=Electrolize&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-
+    <script src="down.js"></script>
 </head>
 <body>
     <div class="banner d-flex justify-content-between align-items-center gap-4 container-fluid">
         <div class="brand fs-5 align-items-center">
-          <p class="mb-0 ms-4 b_name">DSP Service</p>
+          <a class="mb-0 ms-4 b_name text-white" href="index.html">DSP Service</a>
         </div>
-        <div class="menu">
-          <a class="text-white tag me-3 m_name"  href="index.html" id="home" >HOME</a>
-          <a class="text-white tag me-3 m_name" id="service" href="servce.html">SERVICES</a>
-          <a class="text-white tag me-3 m_name" id="profile" href="whyus.html">WHY US</a>
-          <a class="text-white tag me-3 m_name" href="about.html" id="about" >ABOUT</a>
-          <a class="text-white tag me-3 m_name" href="future.html" id="future">OUR FUTURE</a>
-          <a class="text-white tag me-3 m_name" href="contact.html" id="contact">CONTACT</a>
+        <div class="menu d-none d-lg-block">
+            <a class="text-white tag me-3 m_name"  href="index.html" id="home" >HOME</a>
+            <a class="text-white tag me-3 m_name" id="service" href="servce.html">SERVICES</a>
+            <a class="text-white tag me-3 m_name" id="profile" href="whyus.html">WHY US</a>
+            <a class="text-white tag me-3 m_name" href="about.html" id="about" >ABOUT</a>
+            <a class="text-white tag me-3 m_name" href="future.html" id="future">OUR FUTURE</a>
+            <a class="text-white tag me-3 m_name" href="contact.html" id="contact">CONTACT</a>
         </div> 
+        <img src="eimg/drop_down.png" class="me-4 downLink d-md-block d-lg-none" onclick="menudown()">
     </div>
-    
+    <div class="menudowns" id="menudowns">
+      <a href="index.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">HOME</a>
+      <a href="servce.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">SERVICE</a>
+      <a href="whyus.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">WHY US</a>
+      <a href="about.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">ABOUT</a>
+      <a href="future.html" class="menu col-12 mb-1 py-2 text-center border-bottom text-black">OUR FUTURE</a>
+      <a href="contact.html" class="menu col-12 mb-1 py-2  text-center border-bottom text-black">CONTACT</a>
+    </div>
     <div class="container-fluid d-flex justify-content-center align-items-center border">
         <div class="container row my-5 py-5 ">
-            <div class="col-5 d-flex flex-column justify-content-center align-items-center">
-                <img src="eimg/s1.jpeg" class="w-100 rounded-5">
+            <div class="col-12 mb-5 col-md-6 col-lg-5 d-flex flex-column justify-content-center align-items-center">
+                <img src="eimg/WhatsApp Image 2025-05-18 at 2.56.35 PM.jpeg" class="w-100 rounded-5">
             </div>
-            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center align-items-center">
                 <p class="h2 col-10">Educational Institutions</p>
                 <p class="fs-5 col-10"> Ensuring the safety of students, 
                     faculty, and property in schools, 
@@ -45,24 +53,25 @@
     </div>
     <div class="container-fluid d-flex justify-content-center align-items-center border">
         <div class="container row my-5 py-5">
-            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-5 order-md-1 d-flex flex-column justify-content-center align-items-center mb-5">
+                <img src="eimg/s1.jpeg" class="w-100 rounded-5">
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 order-md-0 d-flex flex-column justify-content-center align-items-center">
                 <p class="h2 col-10"> Corporate Offices  & Conpaines</p>
                 <p class="fs-5 col-10">Guarding corporate buildings, IT 
                     parks, and administrative spaces with 
                     dedicated security staff and access 
                     control systems.</p>
             </div>
-            <div class="col-5 d-flex flex-column justify-content-center align-items-center">
-                <img src="eimg/s1.jpeg" class="w-100 rounded-5">
-            </div>
+            
         </div>
     </div>
     <div class="container-fluid border d-flex justify-content-center align-items-center">
         <div class="container row my-5 py-5 ">
-            <div class="col-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 mb-5 col-md-6 col-lg-5 d-flex flex-column justify-content-center align-items-center">
                 <img src="eimg/s2.jpeg" class="w-100 rounded-5">
             </div>
-            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center align-items-center">
                 <p class="h2 col-10">Government Offices</p>
                 <p class="fs-5 col-10"> Trusted personnel to secure 
                     sensitive government premises 
@@ -74,24 +83,25 @@
     </div>
     <div class="container-fluid border d-flex justify-content-center align-items-center">
         <div class="container row my-5 py-5">
-            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-lg-5 col-md-6 d-flex flex-column justify-content-center align-items-center mb-5 order-md-1">
+                <img src="eimg/s3.jpeg" class="w-100 rounded-5">
+            </div>
+            <div class="col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center align-items-center order-md-0">
                 <p class="h2 col-10">Shopping Malls & Private</p>
                 <p class="fs-5 col-10">Crowd control, emergency 
                     response, and surveillance support 
                     in high-traffic commercial
                      areas.</p>
             </div>
-            <div class="col-5 d-flex flex-column justify-content-center align-items-center">
-                <img src="eimg/s3.jpeg" class="w-100 rounded-5">
-            </div>
+            
         </div>
     </div>
     <div class="container-fluid border d-flex justify-content-center align-items-center">
         <div class="container row my-5 py-5 ">
-            <div class="col-5 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 mb-5 col-md-6 col-lg-5 d-flex flex-column justify-content-center align-items-center">
                 <img src="eimg/s4.jpeg" class="w-100 rounded-5">
             </div>
-            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+            <div class="col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center align-items-center">
                 <p class="h2 col-10"> Hospitals & Health Care Centers</p>
                 <p class="fs-5 col-10">Specially trained guards to manage 
                     sensitive environments, assist in 
@@ -103,16 +113,17 @@
     </div>
     <div class="container-fluid border d-flex justify-content-center align-items-center">
         <div class="container row my-5 py-5">
-            <div class="col-7 d-flex flex-column justify-content-center align-items-center">
+             <div class="col-12 col-lg-5 col-md-6 d-flex flex-column justify-content-center align-items-center order-md-1 mb-5">
+                <img src="eimg/s6.avif" class="w-100 rounded-5">
+            </div>
+            <div class="col-12 col-lg-7 col-md-6 order-md-0 d-flex flex-column justify-content-center align-items-center">
                 <p class="h2 col-10">Business Centers & Workspaces</p>
                 <p class="fs-5 col-10">Customized solutions to safeguard 
                     business operations, property, and 
                     assets with proactive security 
                     presence.</p>
             </div>
-            <div class="col-5 d-flex flex-column justify-content-center align-items-center">
-                <img src="eimg/s6.avif" class="w-100 rounded-5">
-            </div>
+           
         </div>
     </div>
     <div class="container-fluid d-flex justify-content-center align-items-center">
@@ -120,31 +131,30 @@
             <div class="col-12 d-flex flex-column justify-content-center align-items-center overflow-hidden">
                 <p class="h2 col-10 text-center">Special Housekeeping Services</p>
                 <div class="container d-flex col-10 aani">
-                    <div class="card col-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Hospital</div>
-                    <div class="card col-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Industrial Units</div>
-                    <div class="card col-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Offices & Corporate Buildings</div>
-                    <div class="card col-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Malls & Public Spaces</div>
-                    <div class="card col-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Private Bungalows And Villas</div>
+                    <div class="card col-9 col-md-5 col-lg-4 col-xl-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Hospital</div>
+                    <div class="card col-9 col-md-5 col-lg-4 col-xl-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Industrial Units</div>
+                    <div class="card col-9 col-md-5 col-lg-4 col-xl-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Offices & Corporate Buildings</div>
+                    <div class="card col-9 col-md-5 col-lg-4 col-xl-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Malls & Public Spaces</div>
+                    <div class="card col-9 col-md-5 col-lg-4 col-xl-3 my-5 mx-4 py-3 px-4 d-flex align-items-center justify-content-center">Private Bungalows And Villas</div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid b1 py-5 d-flex justify-content-center">
+    <div class="container-fluid b1 py-5 d-flex justify-content-center d-none d-md-block">
       <div class="container row my-5 gap-5">
-        <div class="col-3 d-flex py-5 mx-4 justify-content-center flex-column align-items-center h-100">
-          
+        <div class="col-md-3 col-12 d-flex py-5 mx-4 justify-content-center flex-column align-items-center h-100">
           <img src="eimg/logo.png" class="w-75">
         </div>
         <div class="col-7 row text-white">
-          <p class="mb-0 b_name">DSP Service</p>
-        <div class="col-6 text-white">
+          <p class="mb-4 b_name">DSP Service</p>
+        <div class="col-6 col-md-6 text-white">
           <a class="fs-6 bmenu mb-3" href="index.html">&gt home</a>
           <a class="fs-6 bmenu mb-3" href="servce.html">&gt services provided</a>
           <a class="fs-6 bmenu mb-3" href="future.html">&gt our plans</a>
           <a class="fs-6 bmenu mb-3" href="servce.html">&gt levels of services</a>
           <a class="fs-6 bmenu mb-3" href="about.html">&gt area served</a>
         </div>
-        <div class="col-3 text-white">
+        <div class="col-md-6 col-xl-3 col-lg-5 text-white">
           <a class="fs-6 bmenu mb-3" href="index.html">&gt working hours</a>
           <a class="fs-6 bmenu mb-3" href="whyus.html">&gt pros of choosing us</a>
           <a class="fs-6 bmenu mb-3" href="contact.html">&gt location</a>
@@ -154,6 +164,26 @@
         </div>
         
       </div>
+    </div>
+    <div class="container-fluid b1 pb-5 d-sm-block d-md-none">
+        <div class="col-12 row text-white">
+          <p class="b_name mt-5 mb-4 ms-4">DSP Service</p>
+           
+        <div class="col-5 me-2 ms-3 text-white">
+          <a class="fs-6 bmenu mb-3" href="index.html">&gt home</a>
+          <a class="fs-6 bmenu mb-3" href="servce.html">&gt services provided</a>
+          <a class="fs-6 bmenu mb-3" href="future.html">&gt our plans</a>
+          <a class="fs-6 bmenu mb-3" href="servce.html">&gt levels of services</a>
+          <a class="fs-6 bmenu mb-3" href="about.html">&gt area served</a>
+        </div>
+        <div class="col-6 text-white">
+          <a class="fs-6 bmenu mb-3" href="index.html">&gt working hours</a>
+          <a class="fs-6 bmenu mb-3" href="whyus.html">&gt pros of choosing us</a>
+          <a class="fs-6 bmenu mb-3" href="contact.html">&gt location</a>
+          <a class="fs-6 bmenu mb-3" href="contact.html">&gt social media ids</a>
+          <a class="fs-6 bmenu mb-3" href="contact.html">&gt leave a comment</a>
+        </div>
+        </div>
     </div>
 </body>
 </html>
