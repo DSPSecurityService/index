@@ -13,8 +13,3 @@ function but_property(){
     document.getElementById('send').style.display='none';
     document.getElementById('disSent').style.display='block';
 }
-
-function hello(){
-    alert('hello');
-}
-

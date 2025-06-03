@@ -80,25 +80,26 @@
         <form class="col-11 row p-4 f1 border-3 border rounded-2 position-relative">
             <div class="col-6 py-3">
                 <label class="form-label">Name:</label>
-                <input type="text" class="form-control" placeholder="John wick">
+                <input type="text" class="form-control" placeholder="John wick" id="fname" required>
             </div>
             <div class="col-6 py-3">
                 <label class="form-label" >Last Name:</label>
-                <input type="text" class="form-control" placeholder="K">
+                <input type="text" class="form-control" placeholder="K" required>
             </div>
             <div class="col-12 py-3">
                 <label class="form-label">Emain ID:</label>
-                <input type="email" class="form-control" placeholder="john123@example.com">
+                <input type="email" class="form-control" placeholder="john123@example.com" id="email" required>
             </div>
             <div class="col-12 py-3">
                 <label class="form-label">Subject:</label>
-                <input type="text" class="form-control" placeholder="Job request/about us/services/etc">
+                <input type="text" class="form-control" placeholder="Job request/about us/services/etc" id="subject" required>
             </div>
             <div class="col-12 py-3">
                 <label class="form-label">Commants:</label>
-                <textarea rows="5" class="form-control" placeholder="Leave a comment here"></textarea>
+                <textarea rows="5" class="form-control" placeholder="Leave a comment here" required id="comment"></textarea>
             </div>
-            <button class="btn btn-primary col-lg-2 py-2 col-md-3 rounded-pill mt-3" id="send">send</button>
+            <button class="btn btn-primary col-lg-2 col-md-4 rounded-pill mt-3" onclick="sendmain();return false;" id="send">send</button>
+            <button class="btn btn-primary col-lg-2 col-md-4 rounded-pill mt-3" disabled id="disSent" style="display: none;">&check; send</button>
         </form>
     </div>
     <div class="container-fluid  overflow-hidden">
