@@ -12,6 +12,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&family=Electrolize&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
     <script src="down.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "li4fKkCiMX-b6LVJn",
+            });
+        })();
+    </script>
+    <script src="conscripts.js"></script>
 </head>
 <body>
     <div class="banner d-flex justify-content-between align-items-center gap-4 container-fluid">
@@ -44,25 +54,30 @@
             <img src="eimg/Image-10.jpg" class="position-absolute z-n1 a1 w-75">
             <div class="col-6 py-3">
                 <label class="form-label">Name:</label>
-                <input type="text" class="form-control" placeholder="John wick">
+                <input type="text" class="form-control" placeholder="John wick" id="fname" required>
             </div>
             <div class="col-6 py-3">
                 <label class="form-label" >Last Name:</label>
-                <input type="text" class="form-control" placeholder="K">
+                <input type="text" class="form-control" placeholder="K" required>
+            </div>
+            <div class="col-12 py-3">
+                <label class="form-label">Emain ID:</label>
+                <input type="email" class="form-control" placeholder="john123@example.com" id="email" required>
             </div>
             <div class="col-12 py-3">
                 <label class="form-label">Subject:</label>
-                <input type="text" class="form-control" placeholder="Job request/about us/services/etc">
+                <input type="text" class="form-control" placeholder="Job request/about us/services/etc" id="subject" required>
             </div>
             <div class="col-12 py-3">
                 <label class="form-label">Commants:</label>
-                <textarea rows="5" class="form-control" placeholder="Leave a comment here"></textarea>
+                <textarea rows="5" class="form-control" placeholder="Leave a comment here" required id="comment"></textarea>
             </div>
-            <button class="btn btn-primary col-lg-2 col-md-4 rounded-pill mt-3">send</button>
+            <button class="btn btn-primary col-lg-2 col-md-4 rounded-pill mt-3" onclick="sendmain();return false;" id="send">send</button>
+            <button class="btn btn-primary col-lg-2 col-md-4 rounded-pill mt-3" disabled id="disSent" style="display: none;">&check; send</button>
         </form>
     </div>
      <div class="d-flex justify-content-center my-3 py-5 d-sm-block d-md-none">
-        <form class="col-11 row p-5 f1 border-3 border rounded-2 position-relative">
+        <form class="col-11 row p-4 f1 border-3 border rounded-2 position-relative">
             <div class="col-6 py-3">
                 <label class="form-label">Name:</label>
                 <input type="text" class="form-control" placeholder="John wick">
@@ -72,6 +87,10 @@
                 <input type="text" class="form-control" placeholder="K">
             </div>
             <div class="col-12 py-3">
+                <label class="form-label">Emain ID:</label>
+                <input type="email" class="form-control" placeholder="john123@example.com">
+            </div>
+            <div class="col-12 py-3">
                 <label class="form-label">Subject:</label>
                 <input type="text" class="form-control" placeholder="Job request/about us/services/etc">
             </div>
@@ -79,7 +98,7 @@
                 <label class="form-label">Commants:</label>
                 <textarea rows="5" class="form-control" placeholder="Leave a comment here"></textarea>
             </div>
-            <button class="btn btn-primary col-lg-2 py-2 col-md-3 rounded-pill mt-3">send</button>
+            <button class="btn btn-primary col-lg-2 py-2 col-md-3 rounded-pill mt-3" id="send">send</button>
         </form>
     </div>
     <div class="container-fluid  overflow-hidden">
